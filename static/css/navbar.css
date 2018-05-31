@@ -1,0 +1,28 @@
+/* The Navigation at the top of the website */
+.justify-content-start {
+	position: fixed;
+	left: 50px; 
+	}
+
+.nav-item {
+	z-index: 9999;
+	}
+
+.nav-link {
+	color: #0066cc;
+	background: transparent;
+}
+	
+@media (max-width: 768px){
+	body {
+		box-shadow: unset 0px 0px 10px #1a1a1a;
+	}
+
+	.justify-content-start {
+		left: 0px;
+	}
+
+	.justify-content-center{
+		margin-left: 28%;
+	}
+}

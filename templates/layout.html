@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Anas Mohamed</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+		<!-- Custom Stylesheet -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">	
+		<link rel="stylesheet" href="{{ url_for('static',filename='css/navbar.css') }}">
+  </head>
+  <body>
+    <div class="site-wrapper">
+			<ul class="nav justify-content-start">
+				<li class="nav-item">
+					<a class="nav-link disabled">Anas Mohamed</a>
+				</li>
+			</ul>
+			<strong><nav class="nav justify-content-center">
+				<ul class="nav nav-pills">
+					<li class="nav-item">
+						<a class="nav-link active" data-toggle="pill" id="Link1" href="{{ url_for('home') }}">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-toggle="pill" id="Link2" href="#Projects">Projects</a>
+					</li>
+				</ul>
+			</nav></strong>
+			
+			<div class="site-wrapper-inner">
+				{% block content %}
+				{% endblock %}
+			</div>
+
+		</div>
+		<!--- End of Site-Wrapper div-->
+		<!-- Scripts --> 
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

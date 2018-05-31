@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Anas Mohamed</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+		<!-- Custom Stylesheet -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">	
+		<link rel="stylesheet" href="{{ url_for('static',filename='css/page.css') }}">
+		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/navbar.css') }}">
+  </head>
+  <body>
+    <div class="site-wrapper">
+			<ul class="nav justify-content-start">
+				<li class="nav-item">
+					<a class="nav-link disabled">Anas Mohamed</a>
+				</li>
+			</ul>
+			<nav class="nav justify-content-center">
+				<ul class="nav nav-pills">
+						<li class="nav-item">
+							<a class="nav-link active" data-toggle="pill" id="Link1" href="#Home">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="pill" id="Link2" href="#Projects">Projects</a>
+						</li>
+				</ul>
+			</nav>
+			<div class="tab-content">
+				<div id="Home" class="tab-pane fade in"> </div>
+				<div id="Projects" class="tab-pane fade in"> 
+					<form method="GET" action="/findyourmla">
+						<button class="btn mla_link">&#x25BA; Find Your MLA</button>
+						<p>A python Flask app that displays the MLA of a selected District in Alberta. <br/>
+							Sqlite3 is used for database querying. The Database itself was made from my <br/>
+							<a href="https://github.com/amohamed11/MinisterScrape" target="_blank">BeautifulSoup4 script</a> that scrapes the data from the Legistlative Assembly<br/>
+							of Alberta website.</p>
+					</form>
+				</div>
+			</div>
+
+			<!-- Rest of the Site -->
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <div class="inner-cover">
+          	<img src="../static/me.jpg" class="image"> <!-- Some copy-right free background iamge -->
+            <h class="cover-heading">Anas Mohamed</h>
+					<p class="lead">Hi there, I am a student at UAlberta majoring in Computing Science. <br/>
+													Pursuing a job as a Software Engineer is a dream of mine. <br/>
+													I am passionate very about Software &amp; Technology. <br/>
+													This website was made to display that passion. <br/>
+													Feel free to contact me about anything.</p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+							<a href="https://github.com/amohamed11" target="_blank"><i class="fab fa-github" style="font-size: 36px"></i> </a>
+							<a href="mailto:amohamed@ualberta.ca"><i class="fas fa-envelope" style="font-size: 36px"></i> </a>
+            </div>
+          </div>
+        </div>
+        <!--- End of Container div-->
+	  	</div>
+      <!--- End of Site-Wrapper Inner div-->
+		</div>
+		<!--- End of Site-Wrapper div-->
+		<!-- Scripts --> 
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
