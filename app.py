@@ -1,5 +1,5 @@
 import sqlite3
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -61,4 +61,4 @@ def district_list():
 
 
 if __name__=='__main__':
-    app.run()
+    app.run(port=8080)
