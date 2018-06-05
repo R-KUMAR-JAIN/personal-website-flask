@@ -73,7 +73,8 @@ body {
 
 .cover-heading {
 	font-weight: lighter;
-	font-size: 38px
+	font-size: 38px;
+	text-shadow: 0px 0px 0.1px #1a1a1a;
 }
 
 .lead {
@@ -90,11 +91,9 @@ body {
 	html {
 		height: 120%;
 	}
-
+}
 @media only screen and (max-width: 768px){
-	.tab-content {
-		text-align: left;
-		margin-top: 4px;
-		margin-left: 1em;
+	.cover-heading {
+		display: grid;
 	}
 }
