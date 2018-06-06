@@ -3,7 +3,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route('/' , methods=['GET', 'POST'])
+@app.route('/')
 def index():
 
     return render_template('home.html')
@@ -11,12 +11,12 @@ def index():
 @app.route('/findyourmla' , methods=['GET', 'POST'])
 def findyourmla():
     districts = district_list()
-    if request.method == 'GET':
-        return render_template('findyourmla.html', districts=districts, chosen='', info = '')
-    else:
+    if request.method == 'POST':
         chosen = request.form['chose']
         info = get_info(chosen)
         return render_template('findyourmla.html', districts=districts, chosen=chosen, info=info)
+    else:
+        return render_template('findyourmla.html', districts=districts, chosen='', info = '')
 
 def get_info(district):
     conn = sqlite3.connect("ministers.db")
