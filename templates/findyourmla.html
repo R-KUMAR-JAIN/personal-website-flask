@@ -20,21 +20,16 @@
 
     <body>
 		<div class="site-wrapper">
-			<ul class="nav justify-content-start">
+			<ul class="nav justify-content-center">
 				<li class="nav-item">
-					<a class="nav-link disabled">Anas Mohamed</a>
+					<h style="color: black;" class="nav-link brand">Anas Mohamed</h>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="/">Home</a>
 				</li>
 			</ul>
-			<nav class="nav justify-content-center">
-				<ul class="nav nav-pills">
-						<li class="nav-item">
-							<a class="nav-link" id="Link1" href="{{ url_for('index') }}">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link active" data-toggle="pill" id="Link2" href="#Projects">Projects</a>
-						</li>
-				</ul>
-			</nav>
+			<hr>
+
 			<div class="site-wrapper-inner">
 				<h class="title">Find Your MLA</h>
 				<form method="POST"  > 

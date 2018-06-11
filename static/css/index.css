@@ -1,15 +1,12 @@
 body, html {
-    height: 100%
-    margin: 0;
+    height: 100%;
+    min-width: 100%;
+	margin: 0px auto;
 }
 
 body {
 	background: #CFD8DC;
 	text-align: center;
-}
-
-.site-wrapper {
-	width: 100%;
 }
 
 .tab-content {
@@ -35,6 +32,7 @@ body {
 }
 
 #Projects {
+	position: flex;
 	opacity: 1;
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
@@ -90,6 +88,11 @@ body {
 	}
 }
 @media only screen and (max-width: 768px){
+	.proj_img {
+		width: 280px;
+		height: 200px;
+	}
+	
 	.cover-heading {
 		display: grid;
 	}

@@ -23,35 +23,33 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
 	</head>
-  <body>
-    <div class="site-wrapper">
-			<ul class="nav justify-content-start">
+	<body>
+		<div class="site-wrapper">
+			<ul class="nav justify-content-center">
 				<li class="nav-item">
-					<a class="nav-link text">Anas Mohamed</a>
+					<h style="color: black;" class="nav-link brand" >Anas Mohamed</h>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" data-toggle="pill" id="Link1" href="#Home">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="pill" id="Link2" href="#Projects">Projects</a>
 				</li>
 			</ul>
-			<ul class="nav justify-content-center">
-					<li class="nav-item">
-						<a class="nav-link active" data-toggle="pill" id="Link1" href="#Home">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-toggle="pill" id="Link2" href="#Projects">Projects</a>
-					</li>
-			</ul>
+			<hr>
 
 			<!-- Site content -->
 			<div class="tab-content">
 				<div id="Home" class="tab-pane active">
-
 					<div class="cover-container">
 						<div class="inner-cover">
 							<img src="../static/me.jpg" class="image">
 							<h class="cover-heading h-desktop">&nbsp; Anas Mohamed</h>
 							<p class="lead">Hi there, I am a student at UAlberta majoring in Computing Science. <br/>
-														I am also a passionate dude who enjoys Programming stuff. <br/>
-														Feel free to contact me.</p>
+											I am also a passionate dude who enjoys Programming stuff. <br/>
+											Feel free to contact me.</p>
 						</div>
-	
+
 						<div class="mastfoot">
 							<div class="inner">
 								<a href="https://github.com/amohamed11"><i class="fab fa-github" style="font-size: 36px"></i> </a>
@@ -60,10 +58,9 @@
 							</div>
 						</div>
 					</div>
-
 				</div>
+
 				<div id="Projects" class="tab-pane"> 
-					<hr>
 					<p><u>SPAW:</u><br>
 						An Unoffical Streamable Python API Wrapper(SPAW). <br>
 						Streamable has a straight forward API, but there is a lack of up to date API Wrappers for it. <br>
@@ -73,6 +70,7 @@
 					</p>
 					<img style="border: solid 2px #b3b3b3;" src="../static/spaw.png" class="proj_img">
 					<hr>
+
 					<form method="GET" action="/findyourmla">
 						<p><u>Find Your MLA:</u><br/> 
 							A python Flask app that displays the MLA of a selected District in Alberta. <br/>
@@ -81,8 +79,9 @@
 							<a href="{{url_for('findyourmla')}}">Application </a>| <a href="https://github.com/amohamed11/Find-Your-MLA">GitHub</a> <br/>
 						</p>
 					</form>
-					<img style="border: solid 2px #b3b3b3;" src="../static/findyourmla.png" class="proj_img">
+					<img style="max-width: 691px; max-height: 574px; border: solid 2px #b3b3b3;" src="../static/findyourmla.png" class="proj_img">
 					<hr>
+					
 					<p><u>Facebook Mirror Bot:</u><br>
 						A Reddit bot that posts a Streamable mirror of Facebook videos submissions. <br>
 						The bot also just so happens to most a picture of a random cat gif. <br>
@@ -94,11 +93,10 @@
 					<hr>
 				</div>
 
+				
+			</div>
 			<!-- End of Site Content -->
-        <!--- End of Container div-->
-	  	</div>
-      <!--- End of Site-Wrapper Inner div-->
 		</div>
-		<!--- End of Site-Wrapper div-->
+	<!--- End of Site-Wrapper div-->
 	</body>
 </html>
