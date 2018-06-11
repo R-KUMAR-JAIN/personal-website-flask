@@ -1,18 +1,23 @@
 /* The Navigation at the top of the website */
+
 .justify-content-start {
 	position: fixed;
 	left: 50px; 
 	}
 
 .nav-item {
+	margin-top: 1em;
 	z-index: 9999;
 	}
+	
+a:hover {
+	color: #90CAF9;
+}
 
 .nav-link {
-	color: #0066cc;
-	background: transparent;
+	color: #1976D2;
 }
-	
+
 @media (max-width: 768px){
 	body {
 		box-shadow: unset 0px 0px 10px #1a1a1a;

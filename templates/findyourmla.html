@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Find your MLA by Anas Mohamed</title>
+        <title>Find your MLA</title>
 		<link rel="icon" href="{{ url_for('static',filename='favicon.ico') }}">
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -35,10 +35,8 @@
 						</li>
 				</ul>
 			</nav>
-			<div class="container">
-				<h class="title">Find Your MLA</h>
-			</div>
 			<div class="site-wrapper-inner">
+				<h class="title">Find Your MLA</h>
 				<form method="POST"  > 
 					{% if info !='' %}
 					<div class="media">
@@ -46,7 +44,7 @@
 							{% if info.image_url !='None' %}
 							<img src="{{ info.image_url }}" class="media-object" style="width:140px">
 							{% endif %}
-							<h1 style="font-size: 1.4em;" >{{ info.name }}</h1>
+							<h1 style="margin-top: 0.6em; font-size: 1.4em;" >{{ info.name }}</h1>
 							<table class="info"> 
 								<tr>
 									<td >Party: {{ info.party }}</td>

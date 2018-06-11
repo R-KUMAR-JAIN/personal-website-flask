@@ -1,13 +1,11 @@
 body, html {
-    height: 100%;
+    height: 100%
     margin: 0;
 }
 
 body {
-	background-image: url("/static/background-blurred-min.jpg");
-	background-size: cover;
+	background: #CFD8DC;
 	text-align: center;
-	box-shadow: inset 0px 0px 30px #1a1a1a;
 }
 
 .site-wrapper {
@@ -32,16 +30,15 @@ body {
 	opacity: 1;
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
+	animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
 	animation-duration: 600ms;
 }
-
 
 #Projects {
 	opacity: 1;
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
+	animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
 	animation-duration: 550ms;
 }
 
@@ -66,7 +63,7 @@ body {
 	width: 140px;
 	height: 140px;
 	border-radius: 50%;
-	border: solid 3px #e6e6e6;
+	border: solid 2px #e6e6e6;
 	box-shadow: 0.1em 0.2em 1em rgba(0, 0, 0, 0.4);
 	align-self: center;
 }
