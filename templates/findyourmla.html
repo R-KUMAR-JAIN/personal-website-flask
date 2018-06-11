@@ -2,6 +2,10 @@
 <html lang="en">
     <head>
         <title>Find your MLA</title>
+<<<<<<< HEAD
+=======
+		<link rel="icon" href="{{ url_for('static',filename='favicon.ico') }}">
+>>>>>>> Branch-Deployment
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,33 +23,30 @@
 
     <body>
 		<div class="site-wrapper">
-			<ul class="nav justify-content-start">
+			<ul class="nav justify-content-center">
 				<li class="nav-item">
-					<a class="nav-link disabled">Anas Mohamed</a>
+					<h style="color: black;" class="nav-link brand">Anas Mohamed</h>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="/">Home</a>
 				</li>
 			</ul>
-			<nav class="nav justify-content-center">
-				<ul class="nav nav-pills">
-						<li class="nav-item">
-							<a class="nav-link" id="Link1" href="{{ url_for('index') }}">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link active" data-toggle="pill" id="Link2" href="#Projects">Projects</a>
-						</li>
-				</ul>
-			</nav>
-			<div class="container">
-				<h class="title">Find Your MLA</h>
-			</div>
+			<hr>
+
 			<div class="site-wrapper-inner">
+<<<<<<< HEAD
 				<form method="POST"> 
+=======
+				<h class="title">Find Your MLA</h>
+				<form method="POST"  > 
+>>>>>>> Branch-Deployment
 					{% if info !='' %}
 					<div class="media">
 						<div class="media-body">
 							{% if info.image_url !='None' %}
 							<img src="{{ info.image_url }}" class="media-object" style="width:140px">
 							{% endif %}
-							<h1 style="font-size: 1.4em;" >{{ info.name }}</h1>
+							<h1 style="margin-top: 0.6em; font-size: 1.4em;" >{{ info.name }}</h1>
 							<table class="info"> 
 								<tr>
 									<td >Party: {{ info.party }}</td>

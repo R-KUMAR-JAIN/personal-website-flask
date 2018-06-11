@@ -3,59 +3,60 @@
   <head>
 	<title>Anas Mohamed</title>
 	<link rel="icon" href="{{ url_for('static',filename='favicon.ico') }}">
+<<<<<<< HEAD
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+=======
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+>>>>>>> Branch-Deployment
 
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 
-		<!-- Custom Stylesheet -->
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">	
-		<link rel="stylesheet" href="{{ url_for('static',filename='css/page.css') }}">
-		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/navbar.css') }}">
-		
-		<!-- Scripts --> 
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<!-- Custom Stylesheet -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">	
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}">
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/navbar.css') }}">
 	
+	<!-- Scripts --> 
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
 	</head>
-  <body>
-    <div class="site-wrapper">
-			<ul class="nav justify-content-start">
+	<body>
+		<div class="site-wrapper">
+			<ul class="nav justify-content-center">
 				<li class="nav-item">
-					<a class="nav-link disabled"><em>Anas Mohamed</em></a>
+					<h style="color: black;" class="nav-link brand" >Anas Mohamed</h>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" data-toggle="pill" id="Link1" href="#Home">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="pill" id="Link2" href="#Projects">Projects</a>
 				</li>
 			</ul>
-			<nav class="nav justify-content-center">
-				<ul class="nav nav-pills">
-						<li class="nav-item">
-							<a class="nav-link active" data-toggle="pill" id="Link1" href="#Home">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" data-toggle="pill" id="Link2" href="#Projects">Projects</a>
-						</li>
-				</ul>
-			</nav>
+			<hr>
 
 			<!-- Site content -->
 			<div class="tab-content">
 				<div id="Home" class="tab-pane active">
-
 					<div class="cover-container">
 						<div class="inner-cover">
-							<img src="../static/me.jpg" class="image"> <!-- Some copy-right free background iamge -->
-							<!-- <h1 class="cover-heading h-mobile">&nbsp; Anas Mohamed</h1> -->
+							<img src="../static/me.jpg" class="image">
 							<h class="cover-heading h-desktop">&nbsp; Anas Mohamed</h>
 							<p class="lead">Hi there, I am a student at UAlberta majoring in Computing Science. <br/>
-														I am just a passionate dude who enjoys Software Engineering. <br/>
-														And this website was made to display that passion. <br/>
-														Feel free to contact me about anything.</p>
+											I am also a passionate dude who enjoys Programming stuff. <br/>
+											Feel free to contact me.</p>
 						</div>
-	
+
 						<div class="mastfoot">
 							<div class="inner">
 								<a href="https://github.com/amohamed11"><i class="fab fa-github" style="font-size: 36px"></i> </a>
@@ -64,23 +65,45 @@
 							</div>
 						</div>
 					</div>
-
 				</div>
+
 				<div id="Projects" class="tab-pane"> 
+					<p><u>SPAW:</u><br>
+						An Unoffical Streamable Python API Wrapper(SPAW). <br>
+						Streamable has a straight forward API, but there is a lack of up to date API Wrappers for it. <br>
+						As such I decided to make one for Python, and package it to make it pip-installable.<br>
+						SPAW has three main functionalties: Upload a Video, Import a Video, and Retrieve a Video.<br>
+						<a href="https://pypi.org/project/spaw/">Documentation </a>| <a href="https://github.com/amohamed11/StreamablePythonAPIWrapper">GitHub</a> <br>
+					</p>
+					<img style="border: solid 2px #b3b3b3;" src="../static/spaw.png" class="proj_img">
+					<hr>
+
 					<form method="GET" action="/findyourmla">
-						<button class="btn mla_link"> <strong><u>Find Your MLA</u></strong></button>
-						<p>A python Flask app that displays the MLA of a selected District in Alberta. <br/>
-							Sqlite3 is used for database querying. The Database itself was made from my <br/>
-							<a href="https://github.com/amohamed11/MinisterScrape" target="_blank">BeautifulSoup4 script</a> that scrapes the data from the Legistlative Assembly<br/>
-							of Alberta website.</p>
+						<p><u>Find Your MLA:</u><br/> 
+							A python Flask app that displays the MLA of a selected District in Alberta. <br/>
+							SQLite3 is used for database querying. The Database itself was made from my <br/>
+							scraping the data - <a href="https://github.com/amohamed11/MinisterScrape">Script</a> - from the Legistlative Assembly of Alberta website.<br/>
+							<a href="{{url_for('findyourmla')}}">Application </a>| <a href="https://github.com/amohamed11/Find-Your-MLA">GitHub</a> <br/>
+						</p>
 					</form>
+					<img style="max-width: 691px; max-height: 574px; border: solid 2px #b3b3b3;" src="../static/findyourmla.png" class="proj_img">
+					<hr>
+					
+					<p><u>Facebook Mirror Bot:</u><br>
+						A Reddit bot that posts a Streamable mirror of Facebook videos submissions. <br>
+						The bot also just so happens to most a picture of a random cat gif. <br>
+						Main purpose was to practice using different APIs such the Reddit API and<br>
+						The Streamable API to make my own API Wrapper.<br>
+						<a href="https://github.com/amohamed11/FacebookMirrorBot">GitHub</a> <br>
+					</p>
+					<img style="border: solid 2px #b3b3b3;" src="../static/facebookmirrobot.png" class="proj_img">
+					<hr>
 				</div>
 
+				
+			</div>
 			<!-- End of Site Content -->
-        <!--- End of Container div-->
-	  	</div>
-      <!--- End of Site-Wrapper Inner div-->
 		</div>
-		<!--- End of Site-Wrapper div-->
+	<!--- End of Site-Wrapper div-->
 	</body>
 </html>

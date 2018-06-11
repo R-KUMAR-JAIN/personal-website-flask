@@ -1,5 +1,6 @@
 import sqlite3
 from flask import Flask, render_template, request
+from os import path
 
 app = Flask(__name__)
 
@@ -19,7 +20,9 @@ def findyourmla():
         return render_template('findyourmla.html', districts=districts, chosen='', info = '')
 
 def get_info(district):
-    conn = sqlite3.connect("ministers.db")
+    ROOT = path.dirname(path.realpath(__file__))
+
+    conn = sqlite3.connect(path.join(ROOT, "ministers.db"))
     c = conn.cursor()
 
     c.execute('''SELECT * FROM ministers WHERE riding='%s' ''' % district)
@@ -45,7 +48,9 @@ def get_info(district):
     return info
 
 def district_list():
-    conn = sqlite3.connect("ministers.db")
+    ROOT = path.dirname(path.realpath(__file__))
+
+    conn = sqlite3.connect(path.join(ROOT, "ministers.db"))
     c = conn.cursor()
 
     c.execute('''SELECT riding FROM ministers ''')
@@ -61,4 +66,4 @@ def district_list():
 
 
 if __name__=='__main__':
-    app.run(port=8080)
+    app.run()    
